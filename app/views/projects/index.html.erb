@@ -1,0 +1,14 @@
+<% @projects.each do |project| %>
+  <div class="card-product">
+      <%= cl_image_tag project.photo.key, height: 300, width: 400, crop: :fill %>
+      <div class="card-product-infos">
+        <h2><%= project.name %> - <a href=<%= project.url %>>Visit</a></h2>
+          <%= turbo_frame_tag id="techs" do %>
+            <%= link_to project_path(project) do %>
+              <h2>Techs:<i class="fa-solid fa-desktop fa-bounce"></i></h2>
+            <% end%>
+          <% end %>
+      </div>
+  </div>
+<% end %>
+

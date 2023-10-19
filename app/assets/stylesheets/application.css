@@ -13,10 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+  font-family: 'Sunshine';
+  src: url('Sunshine.otf');
+}
+
 body {
+  width: 100vw;
+  height: 100vh;
   background-image: url(gtex.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: black;
+  font-family: "Sunshine";
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
