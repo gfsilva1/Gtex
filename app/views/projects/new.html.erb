@@ -1,6 +1,7 @@
 <%= form_with model: @project do |f| %>
 	<%= f.text_field :name %>
 	<%= f.text_field :desription %>
+	<%= f.text_field :url %>
 	<%= f.file_field :photo %>
 	<%= f.submit %>
 <% end %>
